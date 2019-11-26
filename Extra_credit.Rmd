@@ -1,0 +1,30 @@
+---
+title: "Hourly Energy Consumption in the US"
+output: html_document
+---
+
+```{r echo = FALSE, eval = TRUE, message=FALSE, warning=FALSE}
+source("analysis.R")
+```
+
+## Introduction
+
+This data set, provided by PJM Interconnection LLC, shows us the electrical transmission grid serving much of the northeastern United States. Now, over time, one would assume that energy consumption would greatly increase when asked of an expected trend. This could be for a number of reasons, including greater dependency on technology and increased population. However, we will see that there is a more complex answer to this question. PJM collects this data for their own company records in order to continue smooth operation, but also shares it to increase awareness of energy use. This data was collected nearly every hour from the beginning of 2005 through 2018, resulting in a very large and accurate database of energy use.
+
+## A Closer Look...
+```{r, echo = FALSE, warning = FALSE, eval = TRUE}
+library("ggplot2")
+barplot1
+```
+
+As one can see, energy use from year to year doesn't actually vary as much as one would expect. The results for 2004 and 2018 are a result of slightly less data drawn for those years, which, if corrected, would surely continue the plateau trend we see from 2005 to 2017.
+
+## Discussion
+
+Before reading this data, one might expect dramatic increases in energy use, but it is both comforting and surprising to learn that the total useage hasn't increased so much in the passed fifteen or so years. This could be largely due to the development of more efficient technology, such as the switch from incandescent light bulbs to LED. As a kid growing up, I also remember a large movement toward using less energy- things like turning the water off while you brush your teeth and turning off lights when you're not in a room were seen all over TV across the United States. Now, those same commercials aren't seen so much, but it's certainly possible that energy companies and the government achieved the desired effecrt of the commercials. 
+
+Many, many people are effected by energy use. This can simply be seen by the effects of a power outage in a major city like New York! However, knowing the facts changes life on many aspects including voting patterns, governemental policy, and day-to-day decisions of the average person. Knowing this shouldn't however, dissuade one from feeling as though they need to do their part to keep the Earth clean and prevent excess waste of resources. This dataset in no way takes in major pollutants like greenhouse gas emissions and should not be treated as such.
+
+## Reflection
+
+Whiel writing this report, I expected the worst results- climbing energy use levels by the year, not a flat line across the board! I was pleasantly surprised, as many other readers would be, and this helped me realize that the world news and media paints for us isn't the whole truth- while there are many issues that the world has, and they seem to be growing by the day, being aware of the good (which isn't advertised nearly so much) can help one feel less hopeless about the future. Other examples include crime rates, mortality rates, and the like, most with statistics much better than they were twenty years ago, despite feeling that humanity has gone it the opposite direction. While this data set is a great example of that, looking at greenhouse gas emissions would be another story. If I were to continue on, I would find a dataset that shows emissions and how they've changed over the years, and compare that with energy use to see if there is any correlation. 
